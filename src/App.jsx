@@ -20,7 +20,7 @@ function App() {
 
     // Initialize Cohere AI client
     const cohere = new CohereClientV2({
-      token:'p1CJ8sxqEhxbNsvfh60THxk2F3qc1YRwb1Re3q89',
+      token: process.env.REACT_APP_COHERE_API_KEY,
     });
 
     try {
